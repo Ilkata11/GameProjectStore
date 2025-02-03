@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\GameStore.API",
+    "\\GameStore.API\\Controllers",
+    "\\GameStore.BL",
+    "\\GameStore.DL",
+    "\\GameStore.DL\\Repositories",
+    "\\GameStore.Models",
+    "\\GameStore.Tests"
+  ],
+  "PreviewInSolutionExplorer": false
+}

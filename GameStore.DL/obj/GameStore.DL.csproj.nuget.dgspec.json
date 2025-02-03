@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Iliyan_S\\Documents\\GitHub\\GameStore\\GameStore\\GameStore.DL\\GameStore.DL.csproj": {}
+    "C:\\Users\\Iliyan_S\\Documents\\GitHub\\GameProjectStore\\GameStore.DL\\GameStore.DL.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Iliyan_S\\Documents\\GitHub\\GameStore\\GameStore\\GameStore.DL\\GameStore.DL.csproj": {
+    "C:\\Users\\Iliyan_S\\Documents\\GitHub\\GameProjectStore\\GameStore.DL\\GameStore.DL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Iliyan_S\\Documents\\GitHub\\GameStore\\GameStore\\GameStore.DL\\GameStore.DL.csproj",
+        "projectUniqueName": "C:\\Users\\Iliyan_S\\Documents\\GitHub\\GameProjectStore\\GameStore.DL\\GameStore.DL.csproj",
         "projectName": "GameStore.DL",
-        "projectPath": "C:\\Users\\Iliyan_S\\Documents\\GitHub\\GameStore\\GameStore\\GameStore.DL\\GameStore.DL.csproj",
+        "projectPath": "C:\\Users\\Iliyan_S\\Documents\\GitHub\\GameProjectStore\\GameStore.DL\\GameStore.DL.csproj",
         "packagesPath": "C:\\Users\\Iliyan_S\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Iliyan_S\\Documents\\GitHub\\GameStore\\GameStore\\GameStore.DL\\obj\\",
+        "outputPath": "C:\\Users\\Iliyan_S\\Documents\\GitHub\\GameProjectStore\\GameStore.DL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\.ProgramFiles\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -33,8 +33,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Iliyan_S\\Documents\\GitHub\\GameStore\\GameStore\\GameStore.Models\\GameStore.Models.csproj": {
-                "projectPath": "C:\\Users\\Iliyan_S\\Documents\\GitHub\\GameStore\\GameStore\\GameStore.Models\\GameStore.Models.csproj"
+              "C:\\Users\\Iliyan_S\\Documents\\GitHub\\GameProjectStore\\GameStore.Models\\GameStore.Models.csproj": {
+                "projectPath": "C:\\Users\\Iliyan_S\\Documents\\GitHub\\GameProjectStore\\GameStore.Models\\GameStore.Models.csproj"
               }
             }
           }
@@ -74,14 +74,14 @@
         }
       }
     },
-    "C:\\Users\\Iliyan_S\\Documents\\GitHub\\GameStore\\GameStore\\GameStore.Models\\GameStore.Models.csproj": {
+    "C:\\Users\\Iliyan_S\\Documents\\GitHub\\GameProjectStore\\GameStore.Models\\GameStore.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Iliyan_S\\Documents\\GitHub\\GameStore\\GameStore\\GameStore.Models\\GameStore.Models.csproj",
+        "projectUniqueName": "C:\\Users\\Iliyan_S\\Documents\\GitHub\\GameProjectStore\\GameStore.Models\\GameStore.Models.csproj",
         "projectName": "GameStore.Models",
-        "projectPath": "C:\\Users\\Iliyan_S\\Documents\\GitHub\\GameStore\\GameStore\\GameStore.Models\\GameStore.Models.csproj",
+        "projectPath": "C:\\Users\\Iliyan_S\\Documents\\GitHub\\GameProjectStore\\GameStore.Models\\GameStore.Models.csproj",
         "packagesPath": "C:\\Users\\Iliyan_S\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Iliyan_S\\Documents\\GitHub\\GameStore\\GameStore\\GameStore.Models\\obj\\",
+        "outputPath": "C:\\Users\\Iliyan_S\\Documents\\GitHub\\GameProjectStore\\GameStore.Models\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\.ProgramFiles\\Microsoft Visual Studio\\Shared\\NuGetPackages"

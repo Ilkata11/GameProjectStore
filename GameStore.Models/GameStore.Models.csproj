@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Include="C:\Users\Iliyan_S\Documents\GameS\Game.cs" Link="Game.cs" />
+  </ItemGroup>
+
 </Project>

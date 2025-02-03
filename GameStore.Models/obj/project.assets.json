@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Iliyan_S\\Documents\\GitHub\\GameStore\\GameStore\\GameStore.Models\\GameStore.Models.csproj",
+      "projectUniqueName": "C:\\Users\\Iliyan_S\\Documents\\GitHub\\GameProjectStore\\GameStore.Models\\GameStore.Models.csproj",
       "projectName": "GameStore.Models",
-      "projectPath": "C:\\Users\\Iliyan_S\\Documents\\GitHub\\GameStore\\GameStore\\GameStore.Models\\GameStore.Models.csproj",
+      "projectPath": "C:\\Users\\Iliyan_S\\Documents\\GitHub\\GameProjectStore\\GameStore.Models\\GameStore.Models.csproj",
       "packagesPath": "C:\\Users\\Iliyan_S\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Iliyan_S\\Documents\\GitHub\\GameStore\\GameStore\\GameStore.Models\\obj\\",
+      "outputPath": "C:\\Users\\Iliyan_S\\Documents\\GitHub\\GameProjectStore\\GameStore.Models\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\.ProgramFiles\\Microsoft Visual Studio\\Shared\\NuGetPackages"

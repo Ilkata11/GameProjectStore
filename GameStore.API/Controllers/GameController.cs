@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using FluentValidation;
 using GameStore.BL.Interfaces;
 using GameStore.Models;
-using System.Runtime.InteropServices;
 
 namespace GameStore.API.Controllers
 {
@@ -13,10 +13,12 @@ namespace GameStore.API.Controllers
     public class GameController : ControllerBase
     {
         private readonly IGameService _gameService;
+        private readonly IValidator<Game> _validator;
 
-        public GameController(IGameService gameService)
+        public GameController(IGameService gameService, IValidator<Game> validator)
         {
             _gameService = gameService;
+            _validator = validator;
         }
 
         [HttpGet]
@@ -38,6 +40,12 @@ namespace GameStore.API.Controllers
         [HttpPost]
         public async Task<IActionResult> AddGame([FromBody] Game game)
         {
+            var validationResult = await _validator.ValidateAsync(game);
+            if (!validationResult.IsValid)
+            {
+                return BadRequest(validationResult.Errors);
+            }
+
             await _gameService.AddGameAsync(game);
             return CreatedAtAction(nameof(GetGameById), new { id = game.Id }, game);
         }
@@ -46,6 +54,12 @@ namespace GameStore.API.Controllers
         public async Task<IActionResult> UpdateGame(Guid id, [FromBody] Game game)
         {
             if (id != game.Id) return BadRequest("ID mismatch");
+
+            var validationResult = await _validator.ValidateAsync(game);
+            if (!validationResult.IsValid)
+            {
+                return BadRequest(validationResult.Errors);
+            }
 
             var updated = await _gameService.UpdateGameAsync(game);
             if (!updated) return NotFound();

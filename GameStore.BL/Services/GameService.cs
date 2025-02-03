@@ -16,30 +16,32 @@ namespace GameStore.BL.Services
             _gameRepository = gameRepository;
         }
 
-        public async Task<IEnumerable<Game>> GetAllGamesAsync()
+        public Task<IEnumerable<Game>> GetAllGamesAsync()
         {
-            return await _gameRepository.GetAllGamesAsync();
+            return _gameRepository.GetAllGamesAsync();
         }
 
         public async Task<Game?> GetGameByIdAsync(Guid id)
         {
-            return await _gameRepository.GetGameByIdAsync(id);
+            var game = await _gameRepository.GetGameByIdAsync(id);
+            return game ?? null; // Обработваме случая, когато играта не е намерена
         }
 
-        public async Task AddGameAsync(Game game)
+        public async Task<Game> AddGameAsync(Game game)
         {
             game.Id = Guid.NewGuid();
             await _gameRepository.AddGameAsync(game);
+            return game; // Връщаме създадената игра
         }
 
-        public async Task<bool> UpdateGameAsync(Game game)
+        public Task<bool> UpdateGameAsync(Game game)
         {
-            return await _gameRepository.UpdateGameAsync(game);
+            return _gameRepository.UpdateGameAsync(game);
         }
 
-        public async Task<bool> DeleteGameAsync(Guid id)
+        public Task<bool> DeleteGameAsync(Guid id)
         {
-            return await _gameRepository.DeleteGameAsync(id);
+            return _gameRepository.DeleteGameAsync(id);
         }
     }
 }
